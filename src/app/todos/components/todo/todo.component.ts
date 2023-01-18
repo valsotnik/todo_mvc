@@ -8,5 +8,5 @@ import { ITodo } from 'src/app/todos/types/todo.interface';
 })
 
 export class TodoComponent {
-  @Input('todo') todoProps: ITodo
+  @Input('todo') todoProps: ITodo;
 }
