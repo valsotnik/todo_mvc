@@ -1,5 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+
+import { HeaderComponent } from 'src/app/todos/components/header/header.component';
 import { TodosComponent } from 'src/app/todos/components/todos/todos.component';
 
 const routes: Routes = [
@@ -7,8 +9,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [TodosComponent],
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  declarations: [TodosComponent, HeaderComponent],
+  imports: [RouterModule.forChild(routes)]
 })
 export class TodosModule {}
