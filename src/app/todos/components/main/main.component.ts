@@ -36,7 +36,7 @@ export class MainComponent implements OnInit {
       ).pipe(
         map(([todos, filter]: [ITodo[], FilterEnum]) => {
           return  (filter === FilterEnum.active) ? todos.filter((todo) => !todo.isCompleted) :
-                  (filter === FilterEnum.complited) ? todos.filter((todo) => todo.isCompleted) : todos;
+                  (filter === FilterEnum.completed) ? todos.filter((todo) => todo.isCompleted) : todos;
       })
       )
   }
