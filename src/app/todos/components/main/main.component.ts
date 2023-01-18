@@ -22,12 +22,8 @@ export class MainComponent implements OnInit {
       this.todosService.filter$
       ).pipe(
         map(([todos, filter]: [ITodo[], FilterEnum]) => {
-          if (filter === FilterEnum.active) {
-            return todos.filter((todo) => !todo.isCompleted);
-          } else if (filter === FilterEnum.complited) {
-            return todos.filter((todo) => todo.isCompleted);
-          }
-          return todos;
+          return  (filter === FilterEnum.active) ? todos.filter((todo) => !todo.isCompleted) :
+                  (filter === FilterEnum.complited) ? todos.filter((todo) => todo.isCompleted) : todos;
       })
       )
   }
