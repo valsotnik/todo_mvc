@@ -1,8 +1,8 @@
-import { FilterEnum } from './../../types/filter.enum';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
+import { FilterEnum } from 'src/app/todos/types/filter.enum';
 import { TodosService } from 'src/app/todos/services/todos.service';
 
 @Component({

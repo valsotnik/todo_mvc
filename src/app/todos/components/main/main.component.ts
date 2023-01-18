@@ -15,6 +15,7 @@ export class MainComponent implements OnInit {
   public visibleTodos$: Observable<ITodo[]>;
   public noTodoClass$: Observable<boolean>;
   public isAllTodosSelected$: Observable<boolean>;
+  public editingId: string | null = null;
 
   constructor(private todosService: TodosService) {}
 
@@ -45,5 +46,10 @@ export class MainComponent implements OnInit {
   public toggleAllTodos(event: Event): void {
     const target = event.target as HTMLInputElement;
     this.todosService.toggleAll(target.checked);
+  }
+
+  // recieve an editingId from child todo component and change editing id in current class
+  public setEditingId(editingId: string | null): void {
+    this.editingId = editingId;
   }
 }
