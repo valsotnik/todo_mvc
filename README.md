@@ -1,6 +1,10 @@
-# TodoMvc
+# Todo app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+<img width="837" alt="Снимок экрана 2023-01-30 в 09 33 57" src="https://user-images.githubusercontent.com/91071613/215426924-ece929d2-fbb9-4bcc-9df7-816ac32396b5.png">
+  
+  - To-do list with all basic functionality
+ - Deploy link [here](https://cmval-todo-list-ang.netlify.app)
+ - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
 ## Development server
 
